@@ -1,0 +1,88 @@
+<!-- 
+ Week 1 Assignment
+
+• Create a website using only HTML. The website can be anything you like (within school guidelines) if it meets the following criteria:
+• Create a homepage named index.html
+• At least 3 pages with links to navigate between all pages present on each page.
+• 2 different size headers, a list, 3 images, a table, and a form. -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sumo Wrestling</title>
+</head>
+<body>
+    <!--Header of Page, has link to image for the header as well as links between each page, links are each using relative path-->
+    <header>
+        <div>
+        <h1>Sumo Wrestling</h1>
+        <img src="images\article_topimage_sumo.jpg" width="1200" alt="A picture of two sumo wrestlers at the start of a match"><br>
+        <a href="index.html">What Sumo Is</a>
+        <a href="page2.html">What are Sumotori</a>
+        <a href="page3.html">Sumo Lifestyle</a>
+        </div>
+    </header>
+    <!--Main Sections, page 1 is primarily about what Sumo is, contains primarily text and images-->
+    <main>
+        <div>
+            <!--Section 1 for information about Sumo itself-->
+            <section>
+                <h2>What is Sumo?</h2>
+                <p>Sumo is the national sport of Japan, held every other month on the odd-numbered months. It is a combat sport whose participants are typically very large in stature and wear only a belt made of linen or silk called a "mawashi". Sumo is not only a sport for entertainment, but also has a lot of tradition and cultural significance attached to it.</p>
+
+                <!-- Unordered list to display facts about sumo -->
+                <h3>Fun Sumo Facts</h3>
+                <ul>
+                    <li>Sumo is not just a national sport, but a religious ritual</li>
+                    <li>Sumo wrestlers throw salt into the ring to purify it before their match</li>
+                    <li>The water that sumo wrestlers drink at the ring is only handed to them by a wrestler that has not lost, either the winner of the prior bout, or the wrestler set to go after the upcoming one.</li>
+                    <li>The head Gyoji (referee) carries a wakizashi to symbolize that he is so confident in his calls, he is willing to commit seppuku if he is wrong. He doesn't actually do so, it's just symbolism.</li>
+                    <li>The mawashi (belts the wrestlers wear) are sanitized, but never actually washed because of the superstition that washing them would "wash away all of the experience".</li>
+                </ul>
+            </section>
+            <!--Section 2 for info about Sumo, information on where Sumo is done
+            shows a few images as well as resizing them so they fit properly-->
+            <section>
+                <h2>Where are Sumo Tournaments Held?</h2>
+                <img src="images\kokugikan outside.jpg" width="300" height="200">
+                <img src="images\tokyo-ryogoku-kokugikan-214280.jpg" width="300" height="200">
+                <img src="images\osaka prefectural gymnasium.jpeg" width="300">
+                <img src="images\osaka sumo stadium.jpeg" width="300">
+                <img src="images\nagoya sumo stadium.jpg" width="300" height="200">
+                <p>Sumo tournaments are usually held in a stadium like the Ryogoku Kokugikan, where there is a raised clay ring
+                    in the center, with two lines in the middle and a ring around the lines made of straw. They are held every other month on the odd-numbered month. There is no real off-season, and the in-between weeks are spent training.
+                </p>
+            </section>
+            <!--Section 3 for a brief history of Sumo, contains images of older Sumo-->
+            <section>
+                <h2>Sumo History</h2>
+                <p>Sumo is a Japanese national sport with a lot of cultural significance. It dates back over a thousand years as part of a Shinto tradition. The rituals were held as entertainment for the divine in hopes that they would provide a bountiful harvest. The stomping ritual involved in sumo, called "Shiko" is done as part of purification and to scare away evil spirits (it's also really good exercise for your knees!). Sumo wrestlers, also known as "rikishi" or "sumotori" slap their hands together in the pre-fight ritual both as a Shinto tradition, and as a sign of respect to their opponent, showing that they are not carrying or concealing any weapons.</p>
+            </section>
+
+            <!--Another unordered list about tips for watching sumo and how to watch it-->
+            <section>
+                <h3>How to Watch Sumo</h3>
+                <p>Text about how someone can watch Sumo goes here. Tips are below.</p>
+                <ul>
+                    <li>Find a stream online, such as through the NHK World Japan website</li>
+                    <li>Buy tickets prior to a visit to Japan (tickets sell out fast) and view it at the stadium live</li>
+                    <li>Watch highlights and updates from YouTube channels like "Sumo Prime Time"</li>
+                    <li>While in Japan, stream through a TV service such as ABEMA, or another local service</li>
+                </ul>
+            </section>
+        </div>
+        <!-- code for the footer -->
+        <hr>
+        <div>
+            <footer>
+                <p>footer text</p>
+            </footer>
+        </div>
+    </main>
+</body>
+</html>
