@@ -4,16 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sumo Wrestling</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!--Header of Page 2 is mostly the same as the homepage, serves primarily to give the navigation and header image-->
     <header>
-        <div>
-        <h1>Sumo Wrestling</h1>
-        <img src="images\article_topimage_sumo.jpg" width="1200" alt="A picture of two sumo wrestlers at the start of a match"><br>
+        <div class="header-div">
+        <h1 id="site-title">Sumo Wrestling</h1>
+        <img id="header-img" src="images\article_topimage_sumo.jpg" width="1200" alt="A picture of two sumo wrestlers at the start of a match"><br>
+        <div class="link-container">
         <a href="index.html">What Sumo Is</a>
         <a href="page2.html">What are Sumotori</a>
         <a href="page3.html">Sumo Lifestyle</a>
+        </div>
         </div>
     </header>
     <main>
@@ -31,26 +35,37 @@
             <section>
                 <h2>Notable Sumotori</h2>
                 <span>
+                    <div class="wrestler-images">
+                        <div class="column">
                     <h4>Terunofuji</h4>
+                    <img id="teru" src="images\terunofuji.jpg" alt="A picture of Terunofuji with his wife" width="300">
                     <p>Current Yokozuna, top ranked Sumotori</p>
-                    <img src="images\terunofuji.jpg" alt="A picture of Terunofuji with his wife" width="300">
+                        </div>
+                        <div class="column">
                     <h4>Hoshoryu</h4>
+                    <img id="hosh" src="images\hoshoryu.jpg" alt="A picture of Hoshoryu smiling at an interview" width="300">
                     <p>Ozeki, nephew of former Yokozuna Asashoryu</p>
-                    <img src="images\hoshoryu.jpg" alt="A picture of Hoshoryu smiling at an interview" width="300">
+                        </div>
+                        <div class="column">
                     <h4>Onosato</h4>
+                    <img id="big-o" src="images\onosato.jpg" alt="A picture of Onosato at an interview after winning his champtionship" width="300">
                     <p>Most recent championship winner and first wrestler in 25 years to win a special prize in each of his first three top division tournaments</p>
-                    <img src="images\onosato.jpg" alt="A picture of Onosato at an interview after winning his champtionship" width="300">
+                       </div>
+                       <div class="column">
                     <h4>Takerufuji</h4>
+                    <img id="takeru" src="images\takerufuji.jpg" alt="A picture of Takerufuji at an interview after his championship" width="300">
                     <p>First wrestler in 110 years to win a championship on their debut tournament in the top division</p>
-                    <img src="images\takerufuji.jpg" alt="A picture of Takerufuji at an interview after his championship" width="300">
+                       </div>
+                    </div>
                 </span>
             </section>
                         <!--a table to help show how many wrestlers are usually in a rank, and whether the rank is salaried or not-->
                         <section>
                             <h2>Sumo Ranks</h2>
-                            <table>
+                            <p id="table-text">Here is a small list of the Grand Sumo ranks and which ones are salaried</p>
+                            <table id="rank-table" class="table-rows">
                                 <thead>
-                                    <tr>
+                                    <tr id="table-headers">
                                         <th>Rank</th>
                                         <th>Number of Wrestlers</th>
                                         <th>Salaried?</th>
@@ -113,15 +128,16 @@
                         <br>
                         <br>
             <!--form for people to type out some thoughts they might have or talk about some sumo wrestlers they might like. requests name and email address as well -->
-            <section>
-                <form action="">
-                    <label for="textarea">Share your thoughts. Do you know of any notable wrestlers? Tell us about em!</label><br>
+            <section >
+                <p id="form-title">What do you think?</p>
+                <form action="" class="form-container">
+                    <label for="textarea" id="form-label">Share your thoughts. Do you know of any notable wrestlers? Tell us about em!</label><br>
                     <textarea id="textarea" rows="10" cols="50"></textarea><br>
-                    <label for="email">Your Email:</label><br>
+                    <label for="email" class="name-email-lable">Your Email:</label><br>
                     <input type="email" id="email" name="email"><br>
-                    <label for="name">Your Name:</label><br>
+                    <label for="name" class="name-email-lable">Your Name:</label><br>
                     <input type="name" id="name" name="name"><br>
-                    <input type="submit" value="Submit">
+                    <input type="submit" value="Submit" id="submit-button">
                 </form>
             </section>
         </div>

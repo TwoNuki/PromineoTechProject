@@ -1,0 +1,263 @@
+/* Week 2 Assignment */
+
+/* Style the website you made last week using CSS with the following requirements:
+• Use only external CSS file (no internal or inline styling)
+• Every element must be styled.
+• Create style rules using class, id, and element selectors. */
+
+/* * {
+    border: 1px solid red;
+} */
+
+/* making font consistent across site and giving site background a color gradient */
+
+html {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: linear-gradient(180deg, rgba(0,76,119,1) 0%, rgba(0,110,163,1) 35%, rgba(0,212,255,1) 100%);
+    justify-content: center;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+/* centering the header image, links, and site title, give header image a slight shadow, mess with title a bit */
+
+.header-div {
+    display: block;
+    justify-content: center;
+}
+
+#site-title {
+    text-align: center;
+    filter: drop-shadow(2px 2px 1px green) invert(100%);
+}
+
+#header-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+.link-container {
+    display: block;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+/* making nav links have a color background and change color on hover */
+
+a {
+    background-color: white;
+    transition: background-color 0.5s;
+    border-radius: 5px;
+    padding: 3px;
+    font-weight: 500;
+}
+
+a:hover {
+    background-color: gold;
+}
+
+/* adjust general text size styles */
+
+h2, h3 {
+    text-align: center;
+    margin: 2.5rem auto;
+}
+
+p, li {
+    font-size: 18px;
+}
+
+li {
+    padding: 5px;
+}
+
+p {
+    text-align: justify;
+}
+
+/* adjusting images on first page to look nicer, have them be more centered, wrap into a more gallery-like layout, and have a border radius. centered tips text under header to look better */
+
+.arena-pics {
+    display: flex;
+    /* max-width: 80%; */
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.sumo-arena {
+    border-radius: 1rem;
+    margin: 10px;
+}
+
+#tips-line {
+    text-align: center;
+}
+
+/* images of notable wreslters with bits of info above them in columns, added hover effects to the images, and a box shadow */
+
+/* .wrestler-images {
+    display: flex;
+    flex-wrap: nowrap;
+} */
+
+.wrestler-images {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: top;
+    text-align: center;
+}
+
+/* .column {
+    flex: 25%;
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+} */
+
+#teru {
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+}
+#teru:hover {
+    transition: 0.2s;
+    filter:brightness(80%)
+}
+#hosh {
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+}
+#hosh:hover {
+    transition: 0.2s;
+    filter:brightness(80%)
+}
+#big-o {
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+}
+#big-o:hover {
+    transition: 0.2s;
+    filter:brightness(80%)
+}
+#takeru {
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+}
+#takeru:hover {
+    transition: 0.2s;
+    filter:brightness(80%)
+}
+
+/* .rikishi {
+    vertical-align: bottom;
+} */
+/* .column:hover {
+    transition: 0.5s;
+    filter:brightness(80%)
+} */
+
+/* styling table to have a little better readability and hover effect */
+
+#table-text {
+    text-align: center;
+}
+#rank-table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+
+}
+.table-rows tr:nth-last-child(-n + 10) {
+    background-color: white;
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 3px solid transparent;
+    background-clip: padding-box;
+}
+
+/* .table-rows tr:nth-child(-n + 4) {
+    background-color: lightgray;
+} */
+
+#table-headers {
+    background-color: gold;
+}
+
+.table-rows tr:hover {
+    transition: 0.2s;
+    background-color: gray;
+    color: white;
+}
+
+/* styling form to be centered and not look terrible, change font size, give input fields a border, change submit button color and give hover effect */
+
+#form-title {
+    text-align: center;
+    font-weight: bold;
+}
+
+.form-container {
+    display: block;
+    text-align: center;
+}
+
+#textarea {
+    border: 2px solid darkblue;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#form-label {
+    font-weight: 600;
+}
+
+.name-email-lable {
+    font-weight: 500;
+}
+#email {
+    font-size: 16px;
+    border: 2px solid darkblue;
+}
+#name {
+    font-size: 16px;
+    border: 2px solid darkblue;
+}
+#submit-button {
+    background-color: white;
+    color:black;
+    padding: 5px;
+    margin-top: 10px;
+    width: 80px;
+    font-weight: bold;
+    border-radius: 10%;
+}
+#submit-button:hover {
+    transition: 0.2s;
+    background-color: gold;
+}
+
+/* minor adjustments to the final page since most of it is just text that's similar to the other two pages, and a couple images */
+
+.food-pics {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+#chanko {
+    object-fit: contain;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+#chanko2 {
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+}
